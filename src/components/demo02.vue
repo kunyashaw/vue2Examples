@@ -21,6 +21,10 @@
 // 数据绑定以及常用指令
     export default {
         name:'demo02',
+        watch: {
+        message: function (newValue, oldValue) {
+            console.log("newValue is "+newValue);
+       }},
         data(){
             return {
                 u_name:"zhangsan",
