@@ -1,7 +1,7 @@
 <template>
 <div>
     <h1>Hello Component of Demo03</h1>
-    <router-link to="demo02">跳转到demo02</router-link>
+    <router-link to="demo02/20">跳转到demo02</router-link>
     <button v-on:click="jump()">跳转到demo02</button>
     <demo045 message="asdfasd" v-on:callParent="count($event)"></demo045>
     <input type="text" v-model='msg'/>
@@ -36,7 +36,7 @@ import demo04 from '@/components/demo04'
     },
         methods:{
             jump:function(){
-                this.$router.push('demo02');
+                this.$router.push('demo02/30');
             },
             count(msgFromSon){
                 alert('msg from son is '+msgFromSon);

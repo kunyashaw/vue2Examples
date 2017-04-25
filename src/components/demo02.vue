@@ -36,9 +36,10 @@
         methods:{
             loadMore: function (){
                 alert('加载更多数据！');
-            }
-            
-            
+        }           
+        },
+        created(){
+            console.log(this.$route.params.id);
         }
     }
 </script>
