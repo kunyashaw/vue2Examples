@@ -1,7 +1,7 @@
 <template>
 <div>
 <h1>Hello Component of Demo01</h1>
-<p>{{"u_name is "+u_name}}</p>
+<p>{{"u_name is "+u_name | uppercaseTest}}</p>
 <ul>
     <li v-for="item in list">{{item}}</li>
 </ul>
@@ -40,6 +40,14 @@
         },
         created(){
             console.log(this.$route.params.id);
+        },
+        filters:{
+            uppercaseTest: function (str) {
+               return str.toUpperCase();
+            },
+            lowercaseTest: function (str) {
+                return str.toLowerCase();
+            }
         }
     }
 </script>
