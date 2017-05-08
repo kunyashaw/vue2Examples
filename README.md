@@ -1,6 +1,12 @@
-# ve
+# vue.js2.0  案例
+#demo01 组件的创建和使用
+#demo02 数据与视图的相互绑定、接受路由传参
+#demo03 路由的切换、父子组件的交互
+#demo04 父子组件的交互
+#demo05 网络请求交互
+#ToDoBox 待做事项列表练习
 
-> A Vue.js project
+> A Vue Example 
 
 ## Build Setup
 
@@ -13,9 +19,3 @@ npm run dev
 
 # build for production with minification
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
