@@ -21,11 +21,13 @@
 // 数据绑定以及常用指令
     export default {
         name:'demo02',
+        //watch属性是用来指定监听到数据变化时的处理函数
         watch: {
         message: function (newValue, oldValue) {
             console.log("newValue is "+newValue);
        }},
         data(){
+            //当前组件中的数据都在这里初始化
             return {
                 u_name:"zhangsan",
                 list:[10,20,30,40],
@@ -33,11 +35,13 @@
                 message:''
             }
         },
+         //把组件要用到的方法定义到methods属性所对应的对象中
         methods:{
             loadMore: function (){
                 alert('加载更多数据！');
-        }           
+            }           
         },
+        // 在组件创建的时候，去接受传递过来的参数
         created(){
             console.log(this.$route.params.id);
         },

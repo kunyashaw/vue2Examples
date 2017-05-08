@@ -12,10 +12,31 @@
 <script>
 
 /*
-打通父子之间所有数据和方法的共享：
-　　　　　　父模板：<child ref="子名称"></child>
-　　　　　　父访问子:	父组件: this.$refs.子名称.子数据/方法名()
-　　　　　　子访问父:	子组件: this.$parent.子数据/方法名()
+    如果要在一个组件中显示另外一个组件
+    1、将子组件import引入进来
+    2、在父组件中声明
+     在父组件中指定components属性为一个对象，在对象中
+     去指定组件的名称和组件
+     components:{
+         "demo05":Demo05
+     }
+    3、使用子组件
+    <demo05/>
+ */
+/*
+    打通父子之间所有数据和方法的共享：
+    父模板：<child ref="子名称"></child>
+    父访问子:	父组件: this.$refs.子名称.子数据/方法名()
+    子访问父:	子组件: this.$parent.子数据/方法名()
+ */
+ /*
+    路由切换的3种方式：
+    <a href="#/demo02">跳转到demo02</a>
+    <router-link to="demo02">跳转到demo02</router-link>
+    <button v-on:click="jump()">跳转到demo02</button>
+    jump(){
+                this.$router.push('demo02')
+            }
  */
  //<demo045 v-bind:message2="msg" ></demo045>
 import demo04 from '@/components/demo04'

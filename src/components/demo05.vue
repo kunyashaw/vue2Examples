@@ -15,7 +15,7 @@
         },
         methods:{
             getData(){
-
+               //发起网络请求（static目录下test.json文件）
                 this.$http.get('static/test.json')
                 .then(function(response){
                     console.log(response);
